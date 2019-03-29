@@ -14,7 +14,7 @@ Project conducted by the Functional Programming Research Team at Eotvos Lorand U
     * Implementation of determinant of 3x3 matrices.
 
 ### Deadline April 12th
-####Ying
+#### Ying
 * ONB type definition (pre-requisites: Mat3x3, Vec3 type definitions, Vec3 cross product and normalize method)
 
 ```c++
@@ -59,7 +59,7 @@ class Triangle{
 };
 ```
 
-####Le Minh
+#### Le Minh
 * Buffer type definition which has the objective of storing the data as every pixel is processed; and has a method to write the rendering result to a ppm file. (pre-requisite: Vec3 type definition)
 ```c++
 class Buffer
