@@ -41,6 +41,10 @@ private:
 };
 ```
 
+#### Pedro
+* Ray type definition;
+* IntersectionRecord type definition;
+
 ### Deadline > April 12th
 #### Evan
 * Triangle type definition, including intersection Ray-Triangle.
@@ -79,8 +83,6 @@ public:
 ```
 
 #### Pedro
-* Ray type definition;
-* IntersectionRecord type definition;
 * PinHoleCamera type definition (pre-requisites: ONB,Vec3, and Vec2 type definitions, Vec3 normalize method)
 ```c++
 class PinHoleCamera{
