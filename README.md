@@ -4,27 +4,18 @@ Project conducted by the Functional Programming Research Team at Eotvos Lorand U
 
 ## Task Division
 
-### Available Modules
+### Deadline April 5th
+#### Yuri
+* Vec2 type definition;
+* Vec3 type definition;
+    * Implementation of dot and cross products for Vec3;
+    * Implementation of normalize() : Vec3 -> Vec3 method;
+* Mat3x3 type definition;
+    * Implementation of determinant of 3x3 matrices.
 
-1. Buffer type definition which has the objective of storing the data as every pixel is processed; and has a method to write the rendering result to a ppm file. (pre-requisite: Vec3 type definition)
-```c++
-class Buffer
-{
-public:
-    Buffer( unsigned int h_resolution,
-            unsigned int v_resolution );
-    ~Buffer( void );
-
-    void save( const std::string &filename ) const;
-
-    unsigned int h_resolution_ = 512;
-    unsigned int v_resolution_ = 512;
-
-    std::vector< std::vector< glm::vec3 > > buffer_data_;
-};
-```
-
-2. ONB type definition (pre-requisites: Mat3x3, Vec3 type definitions, Vec3 cross product and normalize method)
+### Deadline April 12th
+####Ying
+* ONB type definition (pre-requisites: Mat3x3, Vec3 type definitions, Vec3 cross product and normalize method)
 
 ```c++
 class ONB{
@@ -50,7 +41,47 @@ private:
 };
 ```
 
-3. PinHoleCamera type definition (pre-requisites: ONB,Vec3, and Vec2 type definitions, Vec3 normalize method)
+### Deadline > April 12th
+#### Evan
+* Triangle type definition, including intersection Ray-Triangle.
+```c++
+class Triangle{
+    Triangle( glm::vec3 color, const glm::vec3 &a, const glm::vec3 &b, const glm::vec3 &c);
+    
+    bool intersect( const Ray &ray,
+                   IntersectionRecord &intersection_record ) const;
+    
+    
+    glm::vec3 color_ = {0.0f, 0.0f, 0.0f};
+    glm::vec3 a_ = { 0.0f, 0.0f, 0.0f };
+    glm::vec3 b_ = { 0.0f, 0.0f, 0.0f };
+    glm::vec3 c_ = { 0.0f, 0.0f, 0.0f };
+};
+```
+
+####Le Minh
+* Buffer type definition which has the objective of storing the data as every pixel is processed; and has a method to write the rendering result to a ppm file. (pre-requisite: Vec3 type definition)
+```c++
+class Buffer
+{
+public:
+    Buffer( unsigned int h_resolution,
+            unsigned int v_resolution );
+    ~Buffer( void );
+
+    void save( const std::string &filename ) const;
+
+    unsigned int h_resolution_ = 512;
+    unsigned int v_resolution_ = 512;
+
+    std::vector< std::vector< glm::vec3 > > buffer_data_;
+};
+```
+
+#### Pedro
+* Ray type definition;
+* IntersectionRecord type definition;
+* PinHoleCamera type definition (pre-requisites: ONB,Vec3, and Vec2 type definitions, Vec3 normalize method)
 ```c++
 class PinHoleCamera{
 public:
@@ -86,37 +117,7 @@ private:
 };
 ```
 
-### Pedro
-* Ray type definition;
-* IntersectionRecord type definition;
-* Whatever module which hasn't been picked by anybody else :)
-
-### Evan
-* Triangle type definition, including intersection Ray-Triangle.
-```c++
-class Triangle{
-    Triangle( glm::vec3 color, const glm::vec3 &a, const glm::vec3 &b, const glm::vec3 &c);
-    
-    bool intersect( const Ray &ray,
-                   IntersectionRecord &intersection_record ) const;
-    
-    
-    glm::vec3 color_ = {0.0f, 0.0f, 0.0f};
-    glm::vec3 a_ = { 0.0f, 0.0f, 0.0f };
-    glm::vec3 b_ = { 0.0f, 0.0f, 0.0f };
-    glm::vec3 c_ = { 0.0f, 0.0f, 0.0f };
-};
-```
-
-### Yuri
-* Vec2 type definition;
-* Vec3 type definition;
-    * Implementation of dot and cross products for Vec3;
-    * Implementation of normalize() : Vec3 -> Vec3 method;
-* Mat3x3 type definition;
-    * Implementation of determinant of 3x3 matrices.
-
-### All
+#### All
 * Raytracing module: responsible for calculating the rendering of the scene for every pixel (pre-requisite all other modules)
     1. Scene intersection Ray-Triangles;
     1. Modules Orchestration.
