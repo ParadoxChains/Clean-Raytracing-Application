@@ -1,0 +1,57 @@
+implementation module ONB
+
+import StdEnv
+import VectorOverloading
+
+
+
+
+u_ ::Vector3 Real
+u_ = {x0 = 1.0, x1 = 0.0, x2 = 0.0}
+
+v_ ::Vector3 Real
+v_ = {x0 = 0.0, x1 = 1.0, x2 = 0.0}
+
+w_ ::Vector3 Real
+w_ = {x0 = 0.0, x1 = 0.0, x2 = 1.0}
+
+
+
+m_ ::Matrix3 Real
+m_ = { a0 = 1.0, a1 = 0.0, a2 = 0.0
+     , b0 = 0.0, b1 = 1.0, b2 = 0.0
+     , c0 = 0.0, c1 = 0.0, c2 = 1.0 }
+    
+
+
+
+setFromUW:: (Vector3 a) (Vector3 a) -> (Matrix3 a) | *,-a
+setFromUW u w =  { a0 = u.x0 , a1 = v.x0 , a2 = w.x0, 
+			       b0 = u.x1 , b1 = v.x1 , b2 = w.x1,
+				   c0 = u.x2 , c1 = v.x2 , c2 = w.x2 }
+		
+		where v = Vec3crossProduct u w
+//Start = setFromUW  u_  w_	
+//Start = setFromUW (Vec3normalize {x0 = 2.0, x1 =  0.0,  x2 = 1.0}) (Vec3normalize {x0 = 0.0, x1 =  0.0,  x2 = 2.0})
+
+
+setFromV::(Vector3 Real) -> (Matrix3 Real) 
+setFromV v  
+| abs(v.x0)> abs(v.x1)  = { a0 = u1.x0 , a1 = v.x0 , a2 = w1.x0, 
+			       			b0 = u1.x1 , b1 = v.x1 , b2 = w1.x1,
+				   			c0 = u1.x2 , c1 = v.x2 , c2 = w1.x2 }
+
+= { a0 = u2.x0 , a1 = v.x0 , a2 = w2.x0, 
+ 	b0 = u2.x1 , b1 = v.x1 , b2 = w2.x1,
+	c0 = u2.x2 , c1 = v.x2 , c2 = w2.x2 }
+	   
+	   where w1 = Vec3normalize {x0 = v.x2, x1 =  0.0,  x2 = ~v.x0}
+	   		 w2 = Vec3normalize {x0 = 0.0,  x1 = ~v.x2, x2 = v.x1}
+	   		 u1 = Vec3crossProduct w1 v
+	   		 u2 = Vec3crossProduct w2 v
+
+//Start = setFromV v_
+//Start = setFromV  ( Vec3normalize {x0 = 2.5, x1 =  5.0,  x2 = 1.0} )
+	
+	
+
