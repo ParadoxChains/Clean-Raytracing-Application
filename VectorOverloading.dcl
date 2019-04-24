@@ -13,6 +13,10 @@ instance -    (Vector3 a) | - a
 instance *    (Vector3 a) | * a
 instance /    (Vector3 a) | / a
 
+Vec3dotProduct :: (Vector3 a) (Vector3 a) -> a  | *,+ a
+Vec3crossProduct ::  (Vector3 a) (Vector3 a) ->  (Vector3 a) | *,-a
+Vec3normalize :: (Vector3 a) ->  (Vector3 a) | sqrt,*,+,/ a
+
 :: Vector2 a = {v0 :: a, v1 :: a}
 
 instance ==   (Vector2 a) | == a
@@ -23,3 +27,7 @@ instance +    (Vector2 a) | + a
 instance -    (Vector2 a) | - a
 instance *    (Vector2 a) | * a
 instance /    (Vector2 a) | / a
+
+:: Matrix3 a = {a0 :: a, a1 :: a, a2 :: a, b0 :: a, b1 :: a, b2 :: a, c0 :: a, c1 :: a, c2 :: a}
+
+Mat3determinant :: (Matrix3 a) -> a | *,-,+ a
