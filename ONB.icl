@@ -55,13 +55,13 @@ setFromV1 v
 	   		 w2 = Vec3normalize {x0 = 0.0,  x1 = ~v.x2, x2 = v.x1}
 	   		 u1 = Vec3crossProduct w1 v
 	   		 u2 = Vec3crossProduct w2 v
-				
+
 setFromV::(Vector3 Real) -> ONB 
 setFromV v  = setFromV1 (Vec3normalize v)
 
 
 //Start = setFromV v_
-Start = setFromV  {x0 = 2.5, x1 =  5.0,  x2 = 1.0} 
+// Start = setFromV  {x0 = 2.5, x1 =  5.0,  x2 = 1.0} 
 	
 	
 
