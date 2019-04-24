@@ -43,6 +43,7 @@ instance *    (Vector3 a) | * a    where * vector0 vector1	= {x0 = (vector0.x0 *
 
 instance /    (Vector3 a) | / a    where / vector0 vector1	= {x0 = (vector0.x0 / vector1.x0), x1 = (vector0.x1 / vector1.x1), x2 = (vector0.x2 / vector1.x2)}
 
+
 Vec3dotProduct :: (Vector3 a) (Vector3 a) -> a  | *,+ a
 Vec3dotProduct x y = z.x0 + z.x1 + z.x2
 where z = x * y
@@ -63,4 +64,4 @@ Vec3normalize x = {x0 = x.x0/sqrt (Vec3dotProduct x x), x1 = x.x1/sqrt (Vec3dotP
 Mat3determinant :: (Matrix3 a) -> a | *,-,+ a
 Mat3determinant x = x.a0*(x.b1*x.c2 - x.b2*x.c1) - x.a1*(x.b0*x.c2 - x.b2*x.c0) + x.a2*(x.b0*x.c1 - x.b1*x.c0)
 
-Start = Mat3determinant {a0=6, a1=1, a2=1, b0 =4, b1=(-2), b2=5, c0=2, c1=8, c2=7}
+// Start = Mat3determinant {a0=6, a1=1, a2=1, b0 =4, b1=(-2), b2=5, c0=2, c1=8, c2=7}
