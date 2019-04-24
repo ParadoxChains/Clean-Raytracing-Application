@@ -29,19 +29,20 @@ initCamera minX maxX minY maxY distance resolution position up lookAt = { minX_ 
         revDirection = ~direction
         direction = Vec3normalize (lookAt - position)
 
-// TODO: Implement MultMatVec method
+
 getWorldSpaceRay :: PinHoleCamera (Vector2 Int) -> Ray
-getWorldSpaceRay camera coords = {origin_ = camera.position_, direction_ = Vec3normalize (MultMatVec camera.onb_.m_ s)}
+getWorldSpaceRay camera coords = {origin_ = camera.position_, direction_ = Vec3normalize (Mat3Vec3Product camera.onb_.m_ s)}
 
 where
     s = {x0 = u * a + camera.minX_, x1 = v * b - camera.minY_, x2 = c}
-    
-    // TODO: Convert Int division into float division
-    u = coords.v0 / camera.resolution_.v0
-    v = coords.v1 / camera.resolution_.v1
+
+    u = toReal (coords.v0) / toReal (camera.resolution_.v0)
+    v = toReal (coords.v1) / toReal (camera.resolution_.v1)
     
     a = camera.maxX_ - camera.minX_
     b = ~( camera.maxY_ - camera.minY_ )
     c = ~camera.distance_
 
-// Start = initCamera (~1.25) (1.25) (~1.25) (1.25) (3.0) ({v0 = 512, v1 = 512}) ({x0 = 0.0, x1 = 0.0, x2 = 350.0}) ({x0 = 0.0, x1 = 1.0, x2 = 0.0}) ({x0 = 0.0, x1 = 0.0, x2 = ~1.0})
+Start = getWorldSpaceRay camera {v0 = 0, v1 = 50}
+where 
+    camera = initCamera (~1.25) (1.25) (~1.25) (1.25) (3.0) ({v0 = 512, v1 = 512}) ({x0 = 0.0, x1 = 0.0, x2 = 350.0}) ({x0 = 0.0, x1 = 1.0, x2 = 0.0}) ({x0 = 0.0, x1 = 0.0, x2 = ~1.0})

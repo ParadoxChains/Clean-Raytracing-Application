@@ -22,4 +22,4 @@ import Ray
 initCamera :: Real Real Real Real Real (Vector2 Int) (Vector3 Real) (Vector3 Real) (Vector3 Real) -> PinHoleCamera
 
 // Get world space ray, given a pixel coordinate
-getWorldSpaceRay :: (Vector2 Int) -> Ray
+getWorldSpaceRay :: PinHoleCamera (Vector2 Int) -> Ray
