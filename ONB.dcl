@@ -3,13 +3,7 @@ import VectorOverloading
 import StdEnv
 
 // The default ONB is the standard orthonormal basis.
-u_ ::Vector3 Real
-
-v_ ::Vector3 Real
-
-w_ ::Vector3 Real
-
-m_ ::Matrix3 Real
+:: ONB = {u_ :: (Vector3 Real), v_ :: (Vector3 Real), w_ :: (Vector3 Real), m_ :: (Matrix3 Real)}
 
 
 /**
@@ -22,7 +16,7 @@ m_ ::Matrix3 Real
  * Example: setFromUW  {x0 = 0.0, x1 =  0.0,  x2 = 1.0}  {x0 = 0.0, x1 =  1.0,  x2 = 0.0}
  * Output: (Matrix3 0 -1 0 0 0 1 1 0 0)
 */
-setFromUW:: (Vector3 Real) (Vector3 Real) -> (Matrix3 Real) 
+setFromUW:: (Vector3 Real) (Vector3 Real) -> ONB
 
 
 
@@ -37,7 +31,7 @@ setFromUW:: (Vector3 Real) (Vector3 Real) -> (Matrix3 Real)
  * Output: (Matrix3 0 -1 0 -1 0 0 0 0 1)
 */
 
-setFromV::(Vector3 Real) -> (Matrix3 Real) 
+setFromV::(Vector3 Real) -> ONB
 
 
 //!!! note: u,v,w are column 0,1,2 of base matrix
