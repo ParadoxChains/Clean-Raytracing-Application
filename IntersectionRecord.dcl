@@ -2,4 +2,4 @@ definition module IntersectionRecord
 import VectorOverloading
 import StdEnv
 
-:: IntersectionRecord = {t :: Real, position :: Vector3 Real, normal :: Vector3 Real}
+:: IntersectionRecord = {t_ :: Real, position_ :: Vector3 Real, normal_ :: Vector3 Real}
