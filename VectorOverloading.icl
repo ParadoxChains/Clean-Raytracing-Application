@@ -65,3 +65,8 @@ Mat3determinant :: (Matrix3 a) -> a | *,-,+ a
 Mat3determinant x = x.a0*(x.b1*x.c2 - x.b2*x.c1) - x.a1*(x.b0*x.c2 - x.b2*x.c0) + x.a2*(x.b0*x.c1 - x.b1*x.c0)
 
 // Start = Mat3determinant {a0=6, a1=1, a2=1, b0 =4, b1=(-2), b2=5, c0=2, c1=8, c2=7}
+
+Mat3Vec3Product :: (Matrix3 a) (Vector3 a) -> (Vector3 a) | *,+a
+Mat3Vec3Product m v = {x0 = m.a0*v.x0 + m.a1*v.x1 + m.a2*v.x2, x1 = m.b0*v.x0 + m.b1*v.x1 + m.b2*v.x2, x2 = m.c0*v.x0 + m.c1*v.x1 + m.c2*v.x2}
+
+//Start = Mat3Vec3Product {a0=1, a1=1, a2=2, b0 =2, b1=1, b2=3, c0=1, c1=4, c2=2}  {x0 = 3, x1 = 1, x2 = 2} 
