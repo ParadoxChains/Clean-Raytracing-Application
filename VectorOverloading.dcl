@@ -31,3 +31,5 @@ instance /    (Vector2 a) | / a
 :: Matrix3 a = {a0 :: a, a1 :: a, a2 :: a, b0 :: a, b1 :: a, b2 :: a, c0 :: a, c1 :: a, c2 :: a}
 
 Mat3determinant :: (Matrix3 a) -> a | *,-,+ a
+
+Mat3Vec3Product :: (Matrix3 a) (Vector3 a) -> (Vector3 a) | *,+a
