@@ -1,0 +1,3283 @@
+.comp 920 000111010
+.start _nostart_
+.depend "StdDebug" "20181209190536"
+.depend "_SystemEnumStrict" "20181209190537"
+.depend "_SystemStrictLists" "20181209190537"
+.depend "StdStrictLists" "20181209190537"
+.depend "_SystemEnum" "20181209190537"
+.depend "StdEnum" "20181209190536"
+.depend "StdMisc" "20181209190537"
+.depend "StdFunctions" "20181209190536"
+.depend "StdCharList" "20181209190536"
+.depend "StdTuple" "20181209190537"
+.depend "StdOrdList" "20181209190537"
+.depend "StdList" "20181209190537"
+.depend "StdClass" "20181209190536"
+.depend "StdFile" "20181209190536"
+.depend "StdString" "20181209190537"
+.depend "_SystemArray" "20181209190537"
+.depend "StdArray" "20181209190536"
+.depend "StdChar" "20181209190536"
+.depend "StdReal" "20181209190537"
+.depend "StdInt" "20181209190537"
+.depend "StdOverloaded" "20181209190537"
+.depend "StdBool" "20181209190536"
+.depend "StdEnv" "20181209190536"
+.depend "VectorOverloading" "20190425211918"
+.module m_VectorOverloading "VectorOverloading" "20190425211913"
+.endinfo
+.impmod _system
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc e_system_dind
+.implab e_system_nind e_system_eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc ARRAY
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.impmod StdOverloaded
+.impdesc e_StdOverloaded_d+;.+
+.implab e_StdOverloaded_n+;.+ e_StdOverloaded_ea+;.+
+.impdesc e_StdOverloaded_d-;.-
+.implab e_StdOverloaded_n-;.- e_StdOverloaded_ea-;.-
+.impdesc e_StdOverloaded_dzero;.zero
+.implab e_StdOverloaded_nzero;.zero e_StdOverloaded_eazero;.zero
+.impdesc e_StdOverloaded_d*;.*
+.implab e_StdOverloaded_n*;.* e_StdOverloaded_ea*;.*
+.impdesc e_StdOverloaded_d/;./
+.implab e_StdOverloaded_n/;./ e_StdOverloaded_ea/;./
+.impdesc e_StdOverloaded_done;.one
+.implab e_StdOverloaded_none;.one e_StdOverloaded_eaone;.one
+.impdesc e_StdOverloaded_d~;.~
+.implab e_StdOverloaded_n~;.~ e_StdOverloaded_ea~;.~
+.impdesc e_StdOverloaded_dsqrt;.sqrt
+.implab e_StdOverloaded_nsqrt;.sqrt e_StdOverloaded_easqrt;.sqrt
+.export e_VectorOverloading_rVector3
+.record e_VectorOverloading_rVector3 aaa 3 0 "Vector3"
+.export e_VectorOverloading_dVector3.x0
+.export e_VectorOverloading_nVector3.x0
+.descs e_VectorOverloading_dVector3.x0 e_VectorOverloading_nVector3.x0 _ 1 0 "Vector3.x0"
+.n -4 e_VectorOverloading_dVector3.x0 _
+.o 1 0
+e_VectorOverloading_nVector3.x0
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 3 0 1 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_dVector3.x1
+.export e_VectorOverloading_nVector3.x1
+.descs e_VectorOverloading_dVector3.x1 e_VectorOverloading_nVector3.x1 _ 3 0 "Vector3.x1"
+.n -4 e_VectorOverloading_dVector3.x1 _
+.o 1 0
+e_VectorOverloading_nVector3.x1
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 3 0 2 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_dVector3.x2
+.export e_VectorOverloading_nVector3.x2
+.descs e_VectorOverloading_dVector3.x2 e_VectorOverloading_nVector3.x2 _ 4 0 "Vector3.x2"
+.n -4 e_VectorOverloading_dVector3.x2 _
+.o 1 0
+e_VectorOverloading_nVector3.x2
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 3 0 3 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_rVector2
+.record e_VectorOverloading_rVector2 aa 2 0 "Vector2"
+.export e_VectorOverloading_dVector2.v0
+.export e_VectorOverloading_nVector2.v0
+.descs e_VectorOverloading_dVector2.v0 e_VectorOverloading_nVector2.v0 _ 1 0 "Vector2.v0"
+.n -4 e_VectorOverloading_dVector2.v0 _
+.o 1 0
+e_VectorOverloading_nVector2.v0
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 2 0 1 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_dVector2.v1
+.export e_VectorOverloading_nVector2.v1
+.descs e_VectorOverloading_dVector2.v1 e_VectorOverloading_nVector2.v1 _ 2 0 "Vector2.v1"
+.n -4 e_VectorOverloading_dVector2.v1 _
+.o 1 0
+e_VectorOverloading_nVector2.v1
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 2 0 2 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_rMatrix3
+.record e_VectorOverloading_rMatrix3 aaaaaaaaa 9 0 "Matrix3"
+.export e_VectorOverloading_dMatrix3.a0
+.export e_VectorOverloading_nMatrix3.a0
+.descs e_VectorOverloading_dMatrix3.a0 e_VectorOverloading_nMatrix3.a0 _ 1 0 "Matrix3.a0"
+.n -4 e_VectorOverloading_dMatrix3.a0 _
+.o 1 0
+e_VectorOverloading_nMatrix3.a0
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 9 0 1 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_dMatrix3.a1
+.export e_VectorOverloading_nMatrix3.a1
+.descs e_VectorOverloading_dMatrix3.a1 e_VectorOverloading_nMatrix3.a1 _ 3 0 "Matrix3.a1"
+.n -4 e_VectorOverloading_dMatrix3.a1 _
+.o 1 0
+e_VectorOverloading_nMatrix3.a1
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 9 0 2 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_dMatrix3.a2
+.export e_VectorOverloading_nMatrix3.a2
+.descs e_VectorOverloading_dMatrix3.a2 e_VectorOverloading_nMatrix3.a2 _ 4 0 "Matrix3.a2"
+.n -4 e_VectorOverloading_dMatrix3.a2 _
+.o 1 0
+e_VectorOverloading_nMatrix3.a2
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 9 0 3 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_dMatrix3.b0
+.export e_VectorOverloading_nMatrix3.b0
+.descs e_VectorOverloading_dMatrix3.b0 e_VectorOverloading_nMatrix3.b0 _ 5 0 "Matrix3.b0"
+.n -4 e_VectorOverloading_dMatrix3.b0 _
+.o 1 0
+e_VectorOverloading_nMatrix3.b0
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 9 0 4 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_dMatrix3.b1
+.export e_VectorOverloading_nMatrix3.b1
+.descs e_VectorOverloading_dMatrix3.b1 e_VectorOverloading_nMatrix3.b1 _ 6 0 "Matrix3.b1"
+.n -4 e_VectorOverloading_dMatrix3.b1 _
+.o 1 0
+e_VectorOverloading_nMatrix3.b1
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 9 0 5 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_dMatrix3.b2
+.export e_VectorOverloading_nMatrix3.b2
+.descs e_VectorOverloading_dMatrix3.b2 e_VectorOverloading_nMatrix3.b2 _ 7 0 "Matrix3.b2"
+.n -4 e_VectorOverloading_dMatrix3.b2 _
+.o 1 0
+e_VectorOverloading_nMatrix3.b2
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 9 0 6 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_dMatrix3.c0
+.export e_VectorOverloading_nMatrix3.c0
+.descs e_VectorOverloading_dMatrix3.c0 e_VectorOverloading_nMatrix3.c0 _ 8 0 "Matrix3.c0"
+.n -4 e_VectorOverloading_dMatrix3.c0 _
+.o 1 0
+e_VectorOverloading_nMatrix3.c0
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 9 0 7 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_dMatrix3.c1
+.export e_VectorOverloading_nMatrix3.c1
+.descs e_VectorOverloading_dMatrix3.c1 e_VectorOverloading_nMatrix3.c1 _ 9 0 "Matrix3.c1"
+.n -4 e_VectorOverloading_dMatrix3.c1 _
+.o 1 0
+e_VectorOverloading_nMatrix3.c1
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 9 0 8 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_dMatrix3.c2
+.export e_VectorOverloading_nMatrix3.c2
+.descs e_VectorOverloading_dMatrix3.c2 e_VectorOverloading_nMatrix3.c2 _ 10 0 "Matrix3.c2"
+.n -4 e_VectorOverloading_dMatrix3.c2 _
+.o 1 0
+e_VectorOverloading_nMatrix3.c2
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 9 0 9 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_s/;20
+.descexp e_VectorOverloading_d/;20 e_VectorOverloading_n/;20 e_VectorOverloading_l/;20 3 0 "/;20"
+.a 0 a21
+.o 2 0
+e_VectorOverloading_l/;20
+	repl_args 2 2
+.o 3 0
+a21
+.d 3 0
+	jsr ea21
+.o 2 0
+.impmod VectorOverloading
+.impdesc e_VectorOverloading_rVector2
+	build_r e_VectorOverloading_rVector2 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 3 e_VectorOverloading_d/;20
+.o 1 0
+e_VectorOverloading_n/;20
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea21
+.o 2 0
+	fill_r e_VectorOverloading_rVector2 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 3 0
+ea21
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 2 0
+	push_r_args 3 2 0
+	push_r_args 4 1 0
+	update_a 4 7
+	update_a 1 4
+	update_a 3 6
+	update_a 0 3
+	update_a 2 5
+	pop_a 3
+.o 5 0
+e_VectorOverloading_s/;20
+.o 5 0
+s21
+	push_a 4
+	push_a 3
+	push_a 2
+	build _ 3 n44
+	push_a 4
+	push_a 3
+	push_a 3
+	build _ 3 n43
+	update_a 1 6
+	updatepop_a 0 5
+.d 2 0
+	rtn
+.n 3 _ ea44
+.o 1 0
+n44
+	push_node _cycle_in_spine 3
+.o 4 0
+ea44
+.o 4 0
+s44
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea43
+.o 1 0
+n43
+	push_node _cycle_in_spine 3
+.o 4 0
+ea43
+.o 4 0
+s43
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_s*;19
+.descexp e_VectorOverloading_d*;19 e_VectorOverloading_n*;19 e_VectorOverloading_l*;19 3 0 "*;19"
+.a 0 a20
+.o 2 0
+e_VectorOverloading_l*;19
+	repl_args 2 2
+.o 3 0
+a20
+.d 3 0
+	jsr ea20
+.o 2 0
+	build_r e_VectorOverloading_rVector2 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 3 e_VectorOverloading_d*;19
+.o 1 0
+e_VectorOverloading_n*;19
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea20
+.o 2 0
+	fill_r e_VectorOverloading_rVector2 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 3 0
+ea20
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 2 0
+	push_r_args 3 2 0
+	push_r_args 4 1 0
+	update_a 4 7
+	update_a 1 4
+	update_a 3 6
+	update_a 0 3
+	update_a 2 5
+	pop_a 3
+.o 5 0
+e_VectorOverloading_s*;19
+.o 5 0
+s20
+	push_a 4
+	push_a 3
+	push_a 2
+	build _ 3 n46
+	push_a 4
+	push_a 3
+	push_a 3
+	build _ 3 n45
+	update_a 1 6
+	updatepop_a 0 5
+.d 2 0
+	rtn
+.n 3 _ ea46
+.o 1 0
+n46
+	push_node _cycle_in_spine 3
+.o 4 0
+ea46
+.o 4 0
+s46
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea45
+.o 1 0
+n45
+	push_node _cycle_in_spine 3
+.o 4 0
+ea45
+.o 4 0
+s45
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_s-;18
+.descexp e_VectorOverloading_d-;18 e_VectorOverloading_n-;18 e_VectorOverloading_l-;18 3 0 "-;18"
+.a 0 a19
+.o 2 0
+e_VectorOverloading_l-;18
+	repl_args 2 2
+.o 3 0
+a19
+.d 3 0
+	jsr ea19
+.o 2 0
+	build_r e_VectorOverloading_rVector2 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 3 e_VectorOverloading_d-;18
+.o 1 0
+e_VectorOverloading_n-;18
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea19
+.o 2 0
+	fill_r e_VectorOverloading_rVector2 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 3 0
+ea19
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 2 0
+	push_r_args 3 2 0
+	push_r_args 4 1 0
+	update_a 4 7
+	update_a 1 4
+	update_a 3 6
+	update_a 0 3
+	update_a 2 5
+	pop_a 3
+.o 5 0
+e_VectorOverloading_s-;18
+.o 5 0
+s19
+	push_a 4
+	push_a 3
+	push_a 2
+	build _ 3 n48
+	push_a 4
+	push_a 3
+	push_a 3
+	build _ 3 n47
+	update_a 1 6
+	updatepop_a 0 5
+.d 2 0
+	rtn
+.n 3 _ ea48
+.o 1 0
+n48
+	push_node _cycle_in_spine 3
+.o 4 0
+ea48
+.o 4 0
+s48
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea47
+.o 1 0
+n47
+	push_node _cycle_in_spine 3
+.o 4 0
+ea47
+.o 4 0
+s47
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_s+;17
+.descexp e_VectorOverloading_d+;17 e_VectorOverloading_n+;17 e_VectorOverloading_l+;17 3 0 "+;17"
+.a 0 a18
+.o 2 0
+e_VectorOverloading_l+;17
+	repl_args 2 2
+.o 3 0
+a18
+.d 3 0
+	jsr ea18
+.o 2 0
+	build_r e_VectorOverloading_rVector2 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 3 e_VectorOverloading_d+;17
+.o 1 0
+e_VectorOverloading_n+;17
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea18
+.o 2 0
+	fill_r e_VectorOverloading_rVector2 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 3 0
+ea18
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 2 0
+	push_r_args 3 2 0
+	push_r_args 4 1 0
+	update_a 4 7
+	update_a 1 4
+	update_a 3 6
+	update_a 0 3
+	update_a 2 5
+	pop_a 3
+.o 5 0
+e_VectorOverloading_s+;17
+.o 5 0
+s18
+	push_a 4
+	push_a 3
+	push_a 2
+	build _ 3 n50
+	push_a 4
+	push_a 3
+	push_a 3
+	build _ 3 n49
+	update_a 1 6
+	updatepop_a 0 5
+.d 2 0
+	rtn
+.n 3 _ ea50
+.o 1 0
+n50
+	push_node _cycle_in_spine 3
+.o 4 0
+ea50
+.o 4 0
+s50
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea49
+.o 1 0
+n49
+	push_node _cycle_in_spine 3
+.o 4 0
+ea49
+.o 4 0
+s49
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_s~;16
+.descexp e_VectorOverloading_d~;16 e_VectorOverloading_n~;16 e_VectorOverloading_l~;16 2 0 "~;16"
+.a 0 a17
+.o 2 0
+e_VectorOverloading_l~;16
+	repl_args 1 1
+.o 2 0
+a17
+.d 2 0
+	jsr ea17
+.o 2 0
+	build_r e_VectorOverloading_rVector2 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 2 e_VectorOverloading_d~;16
+.o 1 0
+e_VectorOverloading_n~;16
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea17
+.o 2 0
+	fill_r e_VectorOverloading_rVector2 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 2 0
+ea17
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 2 0
+	push_r_args 2 1 0
+	update_a 2 4
+	update_a 0 2
+	update_a 1 3
+	pop_a 2
+.o 3 0
+e_VectorOverloading_s~;16
+.o 3 0
+s17
+	push_a 2
+	push_a 1
+	build e_system_dAP 2 e_system_nAP
+	push_a 2
+	push_a 2
+	build e_system_dAP 2 e_system_nAP
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 0
+	rtn
+.export e_VectorOverloading_sone;15
+.descexp e_VectorOverloading_done;15 e_VectorOverloading_none;15 e_VectorOverloading_lone;15 1 0 "one;15"
+.o 2 0
+e_VectorOverloading_lone;15
+	pop_a 1
+.d 1 0
+	jsr ea16
+.o 2 0
+	build_r e_VectorOverloading_rVector2 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_VectorOverloading_done;15
+.o 1 0
+e_VectorOverloading_none;15
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea16
+.o 2 0
+	fill_r e_VectorOverloading_rVector2 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea16
+	jsr_eval 0
+	repl_r_args 1 0
+.o 1 0
+e_VectorOverloading_sone;15
+.o 1 0
+s16
+	push_a 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.export e_VectorOverloading_szero;14
+.descexp e_VectorOverloading_dzero;14 e_VectorOverloading_nzero;14 e_VectorOverloading_lzero;14 1 0 "zero;14"
+.o 2 0
+e_VectorOverloading_lzero;14
+	pop_a 1
+.d 1 0
+	jsr ea15
+.o 2 0
+	build_r e_VectorOverloading_rVector2 2 0 0 0
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_VectorOverloading_dzero;14
+.o 1 0
+e_VectorOverloading_nzero;14
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea15
+.o 2 0
+	fill_r e_VectorOverloading_rVector2 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea15
+	jsr_eval 0
+	repl_r_args 1 0
+.o 1 0
+e_VectorOverloading_szero;14
+.o 1 0
+s15
+	push_a 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.export e_VectorOverloading_s==;13
+.descexp e_VectorOverloading_d==;13 e_VectorOverloading_n==;13 e_VectorOverloading_l==;13 3 0 "==;13"
+.a 0 a14
+.o 2 0
+e_VectorOverloading_l==;13
+	repl_args 2 2
+.o 3 0
+a14
+.d 3 0
+	jsr ea14
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 3 e_VectorOverloading_d==;13
+.o 1 0
+e_VectorOverloading_n==;13
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea14
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 3 0
+ea14
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 2 0
+	push_r_args 3 2 0
+	push_r_args 4 1 0
+	update_a 4 7
+	update_a 1 4
+	update_a 3 6
+	update_a 0 3
+	update_a 2 5
+	pop_a 3
+.o 5 0
+e_VectorOverloading_s==;13
+.o 5 0
+s14
+	push_a 3
+	push_a 2
+	push_a 2
+	jsr_ap 2
+	pushB_a 0
+	pop_a 1
+	jmp_false else.1
+	push_a 4
+	push_a 3
+	push_a 2
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+	jsr_ap 2
+	pushB_a 0
+	pop_a 1
+.d 0 1 b
+	rtn
+else.1
+	pop_a 5
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_VectorOverloading_s/;12
+.descexp e_VectorOverloading_d/;12 e_VectorOverloading_n/;12 e_VectorOverloading_l/;12 3 0 "/;12"
+.a 0 a13
+.o 2 0
+e_VectorOverloading_l/;12
+	repl_args 2 2
+.o 3 0
+a13
+.d 3 0
+	jsr ea13
+.o 3 0
+.impdesc e_VectorOverloading_rVector3
+	build_r e_VectorOverloading_rVector3 3 0 0 0
+	updatepop_a 0 3
+.d 1 0
+	rtn
+.n 3 e_VectorOverloading_d/;12
+.o 1 0
+e_VectorOverloading_n/;12
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea13
+.o 3 0
+	fill_r e_VectorOverloading_rVector3 3 0 3 0 0
+	pop_a 3
+.d 1 0
+	rtn
+.o 3 0
+ea13
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 3 0
+	push_r_args 4 3 0
+	push_r_args 6 1 0
+	update_a 6 9
+	update_a 3 6
+	update_a 0 3
+	update_a 5 8
+	update_a 2 5
+	update_a 4 7
+	update_a 1 4
+	pop_a 3
+.o 7 0
+e_VectorOverloading_s/;12
+.o 7 0
+s13
+	push_a 6
+	push_a 4
+	push_a 2
+	build _ 3 n53
+	push_a 6
+	push_a 4
+	push_a 3
+	build _ 3 n52
+	push_a 6
+	push_a 4
+	push_a 4
+	build _ 3 n51
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+.d 3 0
+	rtn
+.n 3 _ ea53
+.o 1 0
+n53
+	push_node _cycle_in_spine 3
+.o 4 0
+ea53
+.o 4 0
+s53
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea52
+.o 1 0
+n52
+	push_node _cycle_in_spine 3
+.o 4 0
+ea52
+.o 4 0
+s52
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea51
+.o 1 0
+n51
+	push_node _cycle_in_spine 3
+.o 4 0
+ea51
+.o 4 0
+s51
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_s-;10
+.descexp e_VectorOverloading_d-;10 e_VectorOverloading_n-;10 e_VectorOverloading_l-;10 3 0 "-;10"
+.a 0 a11
+.o 2 0
+e_VectorOverloading_l-;10
+	repl_args 2 2
+.o 3 0
+a11
+.d 3 0
+	jsr ea11
+.o 3 0
+	build_r e_VectorOverloading_rVector3 3 0 0 0
+	updatepop_a 0 3
+.d 1 0
+	rtn
+.n 3 e_VectorOverloading_d-;10
+.o 1 0
+e_VectorOverloading_n-;10
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea11
+.o 3 0
+	fill_r e_VectorOverloading_rVector3 3 0 3 0 0
+	pop_a 3
+.d 1 0
+	rtn
+.o 3 0
+ea11
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 3 0
+	push_r_args 4 3 0
+	push_r_args 6 1 0
+	update_a 6 9
+	update_a 3 6
+	update_a 0 3
+	update_a 5 8
+	update_a 2 5
+	update_a 4 7
+	update_a 1 4
+	pop_a 3
+.o 7 0
+e_VectorOverloading_s-;10
+.o 7 0
+s11
+	push_a 6
+	push_a 4
+	push_a 2
+	build _ 3 n56
+	push_a 6
+	push_a 4
+	push_a 3
+	build _ 3 n55
+	push_a 6
+	push_a 4
+	push_a 4
+	build _ 3 n54
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+.d 3 0
+	rtn
+.n 3 _ ea56
+.o 1 0
+n56
+	push_node _cycle_in_spine 3
+.o 4 0
+ea56
+.o 4 0
+s56
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea55
+.o 1 0
+n55
+	push_node _cycle_in_spine 3
+.o 4 0
+ea55
+.o 4 0
+s55
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea54
+.o 1 0
+n54
+	push_node _cycle_in_spine 3
+.o 4 0
+ea54
+.o 4 0
+s54
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_s+;9
+.descexp e_VectorOverloading_d+;9 e_VectorOverloading_n+;9 e_VectorOverloading_l+;9 3 0 "+;9"
+.a 0 a10
+.o 2 0
+e_VectorOverloading_l+;9
+	repl_args 2 2
+.o 3 0
+a10
+.d 3 0
+	jsr ea10
+.o 3 0
+	build_r e_VectorOverloading_rVector3 3 0 0 0
+	updatepop_a 0 3
+.d 1 0
+	rtn
+.n 3 e_VectorOverloading_d+;9
+.o 1 0
+e_VectorOverloading_n+;9
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea10
+.o 3 0
+	fill_r e_VectorOverloading_rVector3 3 0 3 0 0
+	pop_a 3
+.d 1 0
+	rtn
+.o 3 0
+ea10
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 3 0
+	push_r_args 4 3 0
+	push_r_args 6 1 0
+	update_a 6 9
+	update_a 3 6
+	update_a 0 3
+	update_a 5 8
+	update_a 2 5
+	update_a 4 7
+	update_a 1 4
+	pop_a 3
+.o 7 0
+e_VectorOverloading_s+;9
+.o 7 0
+s10
+	push_a 6
+	push_a 4
+	push_a 2
+	build _ 3 n59
+	push_a 6
+	push_a 4
+	push_a 3
+	build _ 3 n58
+	push_a 6
+	push_a 4
+	push_a 4
+	build _ 3 n57
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+.d 3 0
+	rtn
+.n 3 _ ea59
+.o 1 0
+n59
+	push_node _cycle_in_spine 3
+.o 4 0
+ea59
+.o 4 0
+s59
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea58
+.o 1 0
+n58
+	push_node _cycle_in_spine 3
+.o 4 0
+ea58
+.o 4 0
+s58
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea57
+.o 1 0
+n57
+	push_node _cycle_in_spine 3
+.o 4 0
+ea57
+.o 4 0
+s57
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_s~;8
+.descexp e_VectorOverloading_d~;8 e_VectorOverloading_n~;8 e_VectorOverloading_l~;8 2 0 "~;8"
+.a 0 a9
+.o 2 0
+e_VectorOverloading_l~;8
+	repl_args 1 1
+.o 2 0
+a9
+.d 2 0
+	jsr ea9
+.o 3 0
+	build_r e_VectorOverloading_rVector3 3 0 0 0
+	updatepop_a 0 3
+.d 1 0
+	rtn
+.n 2 e_VectorOverloading_d~;8
+.o 1 0
+e_VectorOverloading_n~;8
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea9
+.o 3 0
+	fill_r e_VectorOverloading_rVector3 3 0 3 0 0
+	pop_a 3
+.d 1 0
+	rtn
+.o 2 0
+ea9
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 3 0
+	push_r_args 3 1 0
+	update_a 3 5
+	update_a 1 3
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 4 0
+e_VectorOverloading_s~;8
+.o 4 0
+s9
+	push_a 3
+	push_a 1
+	build e_system_dAP 2 e_system_nAP
+	push_a 3
+	push_a 2
+	build e_system_dAP 2 e_system_nAP
+	push_a 3
+	push_a 3
+	build e_system_dAP 2 e_system_nAP
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 3 0
+	rtn
+.export e_VectorOverloading_sone;7
+.descexp e_VectorOverloading_done;7 e_VectorOverloading_none;7 e_VectorOverloading_lone;7 1 0 "one;7"
+.o 2 0
+e_VectorOverloading_lone;7
+	pop_a 1
+.d 1 0
+	jsr ea8
+.o 3 0
+	build_r e_VectorOverloading_rVector3 3 0 0 0
+	updatepop_a 0 3
+.d 1 0
+	rtn
+.n 1 e_VectorOverloading_done;7
+.o 1 0
+e_VectorOverloading_none;7
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea8
+.o 3 0
+	fill_r e_VectorOverloading_rVector3 3 0 3 0 0
+	pop_a 3
+.d 1 0
+	rtn
+.o 1 0
+ea8
+	jsr_eval 0
+	repl_r_args 1 0
+.o 1 0
+e_VectorOverloading_sone;7
+.o 1 0
+s8
+	push_a 0
+	push_a 1
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	rtn
+.export e_VectorOverloading_szero;6
+.descexp e_VectorOverloading_dzero;6 e_VectorOverloading_nzero;6 e_VectorOverloading_lzero;6 1 0 "zero;6"
+.o 2 0
+e_VectorOverloading_lzero;6
+	pop_a 1
+.d 1 0
+	jsr ea7
+.o 3 0
+	build_r e_VectorOverloading_rVector3 3 0 0 0
+	updatepop_a 0 3
+.d 1 0
+	rtn
+.n 1 e_VectorOverloading_dzero;6
+.o 1 0
+e_VectorOverloading_nzero;6
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea7
+.o 3 0
+	fill_r e_VectorOverloading_rVector3 3 0 3 0 0
+	pop_a 3
+.d 1 0
+	rtn
+.o 1 0
+ea7
+	jsr_eval 0
+	repl_r_args 1 0
+.o 1 0
+e_VectorOverloading_szero;6
+.o 1 0
+s7
+	push_a 0
+	push_a 1
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	rtn
+.export e_VectorOverloading_s==;5
+.descexp e_VectorOverloading_d==;5 e_VectorOverloading_n==;5 e_VectorOverloading_l==;5 3 0 "==;5"
+.a 0 a6
+.o 2 0
+e_VectorOverloading_l==;5
+	repl_args 2 2
+.o 3 0
+a6
+.d 3 0
+	jsr ea6
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 3 e_VectorOverloading_d==;5
+.o 1 0
+e_VectorOverloading_n==;5
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea6
+.o 0 1 b
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 3 0
+ea6
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 3 0
+	push_r_args 4 3 0
+	push_r_args 6 1 0
+	update_a 6 9
+	update_a 3 6
+	update_a 0 3
+	update_a 5 8
+	update_a 2 5
+	update_a 4 7
+	update_a 1 4
+	pop_a 3
+.o 7 0
+e_VectorOverloading_s==;5
+.o 7 0
+s6
+	push_a 4
+	push_a 2
+	push_a 2
+	jsr_ap 2
+	pushB_a 0
+	pop_a 1
+	jmp_false else.2
+	push_a 5
+	push_a 3
+	push_a 2
+	jsr_ap 2
+	pushB_a 0
+	pop_a 1
+	jmp_false else.3
+	push_a 6
+	push_a 4
+	push_a 2
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+	jsr_ap 2
+	pushB_a 0
+	pop_a 1
+.d 0 1 b
+	rtn
+else.3
+	pop_a 7
+	pushB FALSE
+.d 0 1 b
+	rtn
+else.2
+	pop_a 7
+	pushB FALSE
+.d 0 1 b
+	rtn
+.export e_VectorOverloading_sMat3Vec3Product
+.descexp e_VectorOverloading_dMat3Vec3Product e_VectorOverloading_nMat3Vec3Product e_VectorOverloading_lMat3Vec3Product 4 0 "Mat3Vec3Product"
+.a 0 a5
+.o 2 0
+e_VectorOverloading_lMat3Vec3Product
+	repl_args 3 3
+.o 4 0
+a5
+.d 4 0
+	jsr ea5
+.o 3 0
+	build_r e_VectorOverloading_rVector3 3 0 0 0
+	updatepop_a 0 3
+.d 1 0
+	rtn
+.n 4 e_VectorOverloading_dMat3Vec3Product
+.o 1 0
+e_VectorOverloading_nMat3Vec3Product
+	push_node _cycle_in_spine 4
+.d 4 0
+	jsr ea5
+.o 3 0
+	fill_r e_VectorOverloading_rVector3 3 0 3 0 0
+	pop_a 3
+.d 1 0
+	rtn
+.o 4 0
+ea5
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 1 0
+	push_r_args 1 1 0
+	update_a 1 3
+	update_a 0 2
+	pop_a 2
+.o 4 0
+e_VectorOverloading_sMat3Vec3Product
+.o 4 0
+s5
+	push_a 3
+	build e_VectorOverloading_dVector3.x2 -4 e_VectorOverloading_nVector3.x2
+	push_a 3
+	build e_VectorOverloading_dMatrix3.c2 -4 e_VectorOverloading_nMatrix3.c2
+	push_a 2
+	build _ 3 n74
+	push_a 4
+	build e_VectorOverloading_dVector3.x1 -4 e_VectorOverloading_nVector3.x1
+	push_a 4
+	build e_VectorOverloading_dMatrix3.c1 -4 e_VectorOverloading_nMatrix3.c1
+	push_a 3
+	build _ 3 n73
+	push_a 5
+	build e_VectorOverloading_dVector3.x0 -4 e_VectorOverloading_nVector3.x0
+	push_a 5
+	build e_VectorOverloading_dMatrix3.c0 -4 e_VectorOverloading_nMatrix3.c0
+	push_a 4
+	build _ 3 n72
+	push_a 4
+	build _ 3 n71
+	push_a 3
+	build _ 3 n70
+	push_a 4
+	build e_VectorOverloading_dVector3.x2 -4 e_VectorOverloading_nVector3.x2
+	push_a 4
+	build e_VectorOverloading_dMatrix3.b2 -4 e_VectorOverloading_nMatrix3.b2
+	push_a 3
+	build _ 3 n69
+	push_a 5
+	build e_VectorOverloading_dVector3.x1 -4 e_VectorOverloading_nVector3.x1
+	push_a 5
+	build e_VectorOverloading_dMatrix3.b1 -4 e_VectorOverloading_nMatrix3.b1
+	push_a 4
+	build _ 3 n68
+	push_a 6
+	build e_VectorOverloading_dVector3.x0 -4 e_VectorOverloading_nVector3.x0
+	push_a 6
+	build e_VectorOverloading_dMatrix3.b0 -4 e_VectorOverloading_nMatrix3.b0
+	push_a 5
+	build _ 3 n67
+	push_a 5
+	build _ 3 n66
+	push_a 4
+	build _ 3 n65
+	push_a 5
+	build e_VectorOverloading_dVector3.x2 -4 e_VectorOverloading_nVector3.x2
+	push_a 5
+	build e_VectorOverloading_dMatrix3.a2 -4 e_VectorOverloading_nMatrix3.a2
+	push_a 4
+	build _ 3 n64
+	push_a 6
+	build e_VectorOverloading_dVector3.x1 -4 e_VectorOverloading_nVector3.x1
+	push_a 6
+	build e_VectorOverloading_dMatrix3.a1 -4 e_VectorOverloading_nMatrix3.a1
+	push_a 5
+	build _ 3 n63
+	push_a 7
+	build e_VectorOverloading_dVector3.x0 -4 e_VectorOverloading_nVector3.x0
+	push_a 7
+	build e_VectorOverloading_dMatrix3.a0 -4 e_VectorOverloading_nMatrix3.a0
+	push_a 6
+	build _ 3 n62
+	push_a 6
+	build _ 3 n61
+	push_a 5
+	build _ 3 n60
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 3 0
+	rtn
+.n 3 _ ea74
+.o 1 0
+n74
+	push_node _cycle_in_spine 3
+.o 4 0
+ea74
+.o 4 0
+s74
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea73
+.o 1 0
+n73
+	push_node _cycle_in_spine 3
+.o 4 0
+ea73
+.o 4 0
+s73
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea72
+.o 1 0
+n72
+	push_node _cycle_in_spine 3
+.o 4 0
+ea72
+.o 4 0
+s72
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea71
+.o 1 0
+n71
+	push_node _cycle_in_spine 3
+.o 4 0
+ea71
+.o 4 0
+s71
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea70
+.o 1 0
+n70
+	push_node _cycle_in_spine 3
+.o 4 0
+ea70
+.o 4 0
+s70
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea69
+.o 1 0
+n69
+	push_node _cycle_in_spine 3
+.o 4 0
+ea69
+.o 4 0
+s69
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea68
+.o 1 0
+n68
+	push_node _cycle_in_spine 3
+.o 4 0
+ea68
+.o 4 0
+s68
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea67
+.o 1 0
+n67
+	push_node _cycle_in_spine 3
+.o 4 0
+ea67
+.o 4 0
+s67
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea66
+.o 1 0
+n66
+	push_node _cycle_in_spine 3
+.o 4 0
+ea66
+.o 4 0
+s66
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea65
+.o 1 0
+n65
+	push_node _cycle_in_spine 3
+.o 4 0
+ea65
+.o 4 0
+s65
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea64
+.o 1 0
+n64
+	push_node _cycle_in_spine 3
+.o 4 0
+ea64
+.o 4 0
+s64
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea63
+.o 1 0
+n63
+	push_node _cycle_in_spine 3
+.o 4 0
+ea63
+.o 4 0
+s63
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea62
+.o 1 0
+n62
+	push_node _cycle_in_spine 3
+.o 4 0
+ea62
+.o 4 0
+s62
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea61
+.o 1 0
+n61
+	push_node _cycle_in_spine 3
+.o 4 0
+ea61
+.o 4 0
+s61
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea60
+.o 1 0
+n60
+	push_node _cycle_in_spine 3
+.o 4 0
+ea60
+.o 4 0
+s60
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_sMat3determinant
+.descexp e_VectorOverloading_dMat3determinant e_VectorOverloading_nMat3determinant e_VectorOverloading_lMat3determinant 4 0 "Mat3determinant"
+.a 0 ea4
+.o 2 0
+e_VectorOverloading_lMat3determinant
+	repl_args 3 3
+.d 4 0
+	jmp ea4
+.n 4 e_VectorOverloading_dMat3determinant _
+.o 1 0
+e_VectorOverloading_nMat3determinant
+	push_node _cycle_in_spine 4
+.d 4 0
+	jsr ea4
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 4 0
+e_VectorOverloading_sMat3determinant
+	jsr_eval 3
+	push_r_args 3 9 0
+	update_a 8 12
+	update_a 4 8
+	update_a 0 4
+	push_a 11
+	update_a 8 12
+	update_a 4 8
+	update_a 0 4
+	update_a 11 0
+	update_a 7 11
+	update_a 3 7
+	update_a 0 3
+	update_a 10 0
+	update_a 6 10
+	update_a 2 6
+	update_a 0 2
+	pop_a 2
+.d 12 0
+	jmp s4
+.o 4 0
+ea4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 3 9 0
+	push_r_args 11 1 0
+	push_r_args 11 1 0
+	push_r_args 11 1 0
+	update_a 11 15
+	update_a 7 11
+	update_a 3 7
+	update_a 10 14
+	update_a 6 10
+	update_a 2 6
+	update_a 9 13
+	update_a 5 9
+	update_a 1 5
+	update_a 8 12
+	update_a 4 8
+	update_a 0 4
+	pop_a 4
+.o 12 0
+s4
+	push_a 9
+	push_a 8
+	push_a 2
+	build _ 3 n87
+	push_a 11
+	push_a 8
+	push_a 3
+	build _ 3 n86
+	push_a 3
+	build _ 3 n85
+	push_a 6
+	push_a 2
+	build _ 3 n84
+	push_a 10
+	push_a 10
+	push_a 3
+	build _ 3 n83
+	push_a 13
+	push_a 9
+	push_a 4
+	build _ 3 n82
+	push_a 4
+	build _ 3 n81
+	push_a 6
+	push_a 3
+	build _ 3 n80
+	push_a 12
+	push_a 11
+	push_a 4
+	build _ 3 n79
+	push_a 14
+	push_a 11
+	push_a 5
+	build _ 3 n78
+	push_a 5
+	build _ 3 n77
+	push_a 6
+	push_a 4
+	build _ 3 n76
+	push_a 4
+	build _ 3 n75
+	push_a 4
+	update_a 2 14
+	update_a 1 13
+	updatepop_a 0 12
+	jmp_ap 2
+.n 3 _ ea87
+.o 1 0
+n87
+	push_node _cycle_in_spine 3
+.o 4 0
+ea87
+.o 4 0
+s87
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea86
+.o 1 0
+n86
+	push_node _cycle_in_spine 3
+.o 4 0
+ea86
+.o 4 0
+s86
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea85
+.o 1 0
+n85
+	push_node _cycle_in_spine 3
+.o 4 0
+ea85
+.o 4 0
+s85
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea84
+.o 1 0
+n84
+	push_node _cycle_in_spine 3
+.o 4 0
+ea84
+.o 4 0
+s84
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea83
+.o 1 0
+n83
+	push_node _cycle_in_spine 3
+.o 4 0
+ea83
+.o 4 0
+s83
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea82
+.o 1 0
+n82
+	push_node _cycle_in_spine 3
+.o 4 0
+ea82
+.o 4 0
+s82
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea81
+.o 1 0
+n81
+	push_node _cycle_in_spine 3
+.o 4 0
+ea81
+.o 4 0
+s81
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea80
+.o 1 0
+n80
+	push_node _cycle_in_spine 3
+.o 4 0
+ea80
+.o 4 0
+s80
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea79
+.o 1 0
+n79
+	push_node _cycle_in_spine 3
+.o 4 0
+ea79
+.o 4 0
+s79
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea78
+.o 1 0
+n78
+	push_node _cycle_in_spine 3
+.o 4 0
+ea78
+.o 4 0
+s78
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea77
+.o 1 0
+n77
+	push_node _cycle_in_spine 3
+.o 4 0
+ea77
+.o 4 0
+s77
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea76
+.o 1 0
+n76
+	push_node _cycle_in_spine 3
+.o 4 0
+ea76
+.o 4 0
+s76
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea75
+.o 1 0
+n75
+	push_node _cycle_in_spine 3
+.o 4 0
+ea75
+.o 4 0
+s75
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_sVec3normalize
+.descexp e_VectorOverloading_dVec3normalize e_VectorOverloading_nVec3normalize e_VectorOverloading_lVec3normalize 5 0 "Vec3normalize"
+.a 0 a3
+.o 2 0
+e_VectorOverloading_lVec3normalize
+	repl_args 4 4
+.o 5 0
+a3
+.d 5 0
+	jsr ea3
+.o 3 0
+	build_r e_VectorOverloading_rVector3 3 0 0 0
+	updatepop_a 0 3
+.d 1 0
+	rtn
+.n 5 e_VectorOverloading_dVec3normalize
+.o 1 0
+e_VectorOverloading_nVec3normalize
+	push_node _cycle_in_spine 5
+.d 5 0
+	jsr ea3
+.o 3 0
+	fill_r e_VectorOverloading_rVector3 3 0 3 0 0
+	pop_a 3
+.d 1 0
+	rtn
+.o 5 0
+ea3
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 3 1 0
+	push_r_args 3 1 0
+	push_r_args 3 1 0
+	push_r_args 3 1 0
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	update_a 0 4
+	pop_a 4
+.o 5 0
+e_VectorOverloading_sVec3normalize
+.o 5 0
+s3
+.impmod StdOverloaded
+.impdesc e_StdOverloaded_r+;
+	build_r e_StdOverloaded_r+; 1 0 2 0
+.impdesc e_StdOverloaded_r*;
+	build_r e_StdOverloaded_r*; 1 0 2 0
+	push_a 6
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 3 n22
+	push_a 1
+	build e_system_dAP 2 e_system_nAP
+	push_a 5
+	build e_VectorOverloading_dVector3.x2 -4 e_VectorOverloading_nVector3.x2
+	push_a 5
+	build _ 3 n90
+	build_r e_StdOverloaded_r+; 1 0 3 0
+	build_r e_StdOverloaded_r*; 1 0 3 0
+	push_a 7
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 3 n22
+	push_a 2
+	build e_system_dAP 2 e_system_nAP
+	push_a 6
+	build e_VectorOverloading_dVector3.x1 -4 e_VectorOverloading_nVector3.x1
+	push_a 6
+	build _ 3 n89
+	build_r e_StdOverloaded_r+; 1 0 4 0
+	build_r e_StdOverloaded_r*; 1 0 4 0
+	push_a 8
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 3 n22
+	push_a 3
+	build e_system_dAP 2 e_system_nAP
+	push_a 7
+	build e_VectorOverloading_dVector3.x0 -4 e_VectorOverloading_nVector3.x0
+	push_a 7
+	build _ 3 n88
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 3 0
+	rtn
+.n 3 _ ea90
+.o 1 0
+n90
+	push_node _cycle_in_spine 3
+.o 4 0
+ea90
+.o 4 0
+s90
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea89
+.o 1 0
+n89
+	push_node _cycle_in_spine 3
+.o 4 0
+ea89
+.o 4 0
+s89
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea88
+.o 1 0
+n88
+	push_node _cycle_in_spine 3
+.o 4 0
+ea88
+.o 4 0
+s88
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ _
+.o 1 0
+n22
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea22
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 3 0
+ea22
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 3 0
+	push_r_args 4 1 0
+	push_r_args 4 1 0
+	update_a 4 7
+	update_a 1 4
+	update_a 3 6
+	update_a 0 3
+	update_a 2 5
+	pop_a 3
+.o 5 0
+s22
+	build_r e_VectorOverloading_rVector3 3 0 2 0
+	build_r e_StdOverloaded_r*; 1 0 1 0
+	build _ 2 n23
+	push_a 0
+	build e_VectorOverloading_dVector3.x2 -4 e_VectorOverloading_nVector3.x2
+	push_a 1
+	build e_VectorOverloading_dVector3.x1 -4 e_VectorOverloading_nVector3.x1
+	push_a 2
+	build e_VectorOverloading_dVector3.x0 -4 e_VectorOverloading_nVector3.x0
+	push_a 5
+	build _ 3 n104
+	push_a 4
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+	jmp_ap 2
+.n 3 _ ea104
+.o 1 0
+n104
+	push_node _cycle_in_spine 3
+.o 4 0
+ea104
+.o 4 0
+s104
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 2 _
+.o 1 0
+n23
+	push_node _cycle_in_spine 2
+.o 2 0
+ea23
+	push_r_args 1 3 0
+	push_r_args 3 1 0
+	update_a 3 5
+	update_a 1 3
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+	push_a 3
+	push_a 4
+	push_a 2
+	build _ 3 n107
+	push_a 3
+	push_a 4
+	push_a 3
+	build _ 3 n106
+	push_a 3
+	push_a 4
+	push_a 4
+	build _ 3 n105
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+	fill_r e_VectorOverloading_rVector3 3 0 3 0 0
+	pop_a 3
+.d 1 0
+	rtn
+.n 3 _ ea107
+.o 1 0
+n107
+	push_node _cycle_in_spine 3
+.o 4 0
+ea107
+.o 4 0
+s107
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea106
+.o 1 0
+n106
+	push_node _cycle_in_spine 3
+.o 4 0
+ea106
+.o 4 0
+s106
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea105
+.o 1 0
+n105
+	push_node _cycle_in_spine 3
+.o 4 0
+ea105
+.o 4 0
+s105
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_sVec3crossProduct
+.descexp e_VectorOverloading_dVec3crossProduct e_VectorOverloading_nVec3crossProduct e_VectorOverloading_lVec3crossProduct 4 0 "Vec3crossProduct"
+.a 0 a2
+.o 2 0
+e_VectorOverloading_lVec3crossProduct
+	repl_args 3 3
+.o 4 0
+a2
+.d 4 0
+	jsr ea2
+.o 3 0
+	build_r e_VectorOverloading_rVector3 3 0 0 0
+	updatepop_a 0 3
+.d 1 0
+	rtn
+.n 4 e_VectorOverloading_dVec3crossProduct
+.o 1 0
+e_VectorOverloading_nVec3crossProduct
+	push_node _cycle_in_spine 4
+.d 4 0
+	jsr ea2
+.o 3 0
+	fill_r e_VectorOverloading_rVector3 3 0 3 0 0
+	pop_a 3
+.d 1 0
+	rtn
+.o 4 0
+ea2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 1 0
+	push_r_args 1 1 0
+	update_a 1 3
+	update_a 0 2
+	pop_a 2
+.o 4 0
+e_VectorOverloading_sVec3crossProduct
+.o 4 0
+s2
+	push_a 3
+	build e_VectorOverloading_dVector3.x0 -4 e_VectorOverloading_nVector3.x0
+	push_a 3
+	build e_VectorOverloading_dVector3.x1 -4 e_VectorOverloading_nVector3.x1
+	push_a 2
+	build _ 3 n99
+	push_a 4
+	build e_VectorOverloading_dVector3.x1 -4 e_VectorOverloading_nVector3.x1
+	push_a 4
+	build e_VectorOverloading_dVector3.x0 -4 e_VectorOverloading_nVector3.x0
+	push_a 3
+	build _ 3 n98
+	push_a 3
+	build _ 3 n97
+	push_a 4
+	build e_VectorOverloading_dVector3.x2 -4 e_VectorOverloading_nVector3.x2
+	push_a 4
+	build e_VectorOverloading_dVector3.x0 -4 e_VectorOverloading_nVector3.x0
+	push_a 3
+	build _ 3 n96
+	push_a 5
+	build e_VectorOverloading_dVector3.x0 -4 e_VectorOverloading_nVector3.x0
+	push_a 5
+	build e_VectorOverloading_dVector3.x2 -4 e_VectorOverloading_nVector3.x2
+	push_a 4
+	build _ 3 n95
+	push_a 4
+	build _ 3 n94
+	push_a 5
+	build e_VectorOverloading_dVector3.x1 -4 e_VectorOverloading_nVector3.x1
+	push_a 5
+	build e_VectorOverloading_dVector3.x2 -4 e_VectorOverloading_nVector3.x2
+	push_a 4
+	build _ 3 n93
+	push_a 6
+	build e_VectorOverloading_dVector3.x2 -4 e_VectorOverloading_nVector3.x2
+	push_a 6
+	build e_VectorOverloading_dVector3.x1 -4 e_VectorOverloading_nVector3.x1
+	push_a 5
+	build _ 3 n92
+	push_a 5
+	build _ 3 n91
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 3 0
+	rtn
+.n 3 _ ea99
+.o 1 0
+n99
+	push_node _cycle_in_spine 3
+.o 4 0
+ea99
+.o 4 0
+s99
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea98
+.o 1 0
+n98
+	push_node _cycle_in_spine 3
+.o 4 0
+ea98
+.o 4 0
+s98
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea97
+.o 1 0
+n97
+	push_node _cycle_in_spine 3
+.o 4 0
+ea97
+.o 4 0
+s97
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea96
+.o 1 0
+n96
+	push_node _cycle_in_spine 3
+.o 4 0
+ea96
+.o 4 0
+s96
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea95
+.o 1 0
+n95
+	push_node _cycle_in_spine 3
+.o 4 0
+ea95
+.o 4 0
+s95
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea94
+.o 1 0
+n94
+	push_node _cycle_in_spine 3
+.o 4 0
+ea94
+.o 4 0
+s94
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea93
+.o 1 0
+n93
+	push_node _cycle_in_spine 3
+.o 4 0
+ea93
+.o 4 0
+s93
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea92
+.o 1 0
+n92
+	push_node _cycle_in_spine 3
+.o 4 0
+ea92
+.o 4 0
+s92
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea91
+.o 1 0
+n91
+	push_node _cycle_in_spine 3
+.o 4 0
+ea91
+.o 4 0
+s91
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_sVec3dotProduct
+.descexp e_VectorOverloading_dVec3dotProduct e_VectorOverloading_nVec3dotProduct e_VectorOverloading_lVec3dotProduct 4 0 "Vec3dotProduct"
+.a 0 ea1
+.o 2 0
+e_VectorOverloading_lVec3dotProduct
+	repl_args 3 3
+.d 4 0
+	jmp ea1
+.n 4 e_VectorOverloading_dVec3dotProduct _
+.o 1 0
+e_VectorOverloading_nVec3dotProduct
+	push_node _cycle_in_spine 4
+.d 4 0
+	jsr ea1
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 4 0
+e_VectorOverloading_sVec3dotProduct
+	jsr_eval 3
+	push_r_args 3 3 0
+	jsr_eval 5
+	push_r_args 5 3 0
+	update_a 5 9
+	update_a 1 5
+	update_a 4 8
+	update_a 0 4
+	push_a 7
+	update_a 4 8
+	update_a 0 4
+	update_a 7 0
+	update_a 3 7
+	update_a 0 3
+	pop_a 3
+.d 8 0
+	jmp s1
+.o 4 0
+ea1
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 3 3 0
+	push_r_args 5 3 0
+	push_r_args 7 1 0
+	push_r_args 7 1 0
+	update_a 7 11
+	update_a 3 7
+	update_a 6 10
+	update_a 2 6
+	update_a 5 9
+	update_a 1 5
+	update_a 4 8
+	update_a 0 4
+	pop_a 4
+.o 8 0
+s1
+	build_r e_VectorOverloading_rVector3 3 0 5 0
+	build_r e_VectorOverloading_rVector3 3 0 3 0
+	build_r e_StdOverloaded_r*; 1 0 2 0
+	build e_VectorOverloading_d*;11 3 e_VectorOverloading_n*;11
+	push_a 0
+	build e_VectorOverloading_dVector3.x2 -4 e_VectorOverloading_nVector3.x2
+	push_a 1
+	build e_VectorOverloading_dVector3.x1 -4 e_VectorOverloading_nVector3.x1
+	push_a 2
+	build e_VectorOverloading_dVector3.x0 -4 e_VectorOverloading_nVector3.x0
+	push_a 5
+	build _ 3 n100
+	push_a 4
+	update_a 2 11
+	update_a 1 10
+	updatepop_a 0 9
+	jmp_ap 2
+.n 3 _ ea100
+.o 1 0
+n100
+	push_node _cycle_in_spine 3
+.o 4 0
+ea100
+.o 4 0
+s100
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_VectorOverloading_s*;11
+.descexp e_VectorOverloading_d*;11 e_VectorOverloading_n*;11 e_VectorOverloading_l*;11 3 0 "*;11"
+.a 0 a12
+.o 2 0
+e_VectorOverloading_l*;11
+	repl_args 2 2
+.o 3 0
+a12
+.d 3 0
+	jsr ea12
+.o 3 0
+	build_r e_VectorOverloading_rVector3 3 0 0 0
+	updatepop_a 0 3
+.d 1 0
+	rtn
+.n 3 e_VectorOverloading_d*;11
+.o 1 0
+e_VectorOverloading_n*;11
+	push_node _cycle_in_spine 3
+.d 3 0
+	jsr ea12
+.o 3 0
+	fill_r e_VectorOverloading_rVector3 3 0 3 0 0
+	pop_a 3
+.d 1 0
+	rtn
+.o 3 0
+ea12
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 2 3 0
+	push_r_args 4 3 0
+	push_r_args 6 1 0
+	update_a 6 9
+	update_a 3 6
+	update_a 0 3
+	update_a 5 8
+	update_a 2 5
+	update_a 4 7
+	update_a 1 4
+	pop_a 3
+.o 7 0
+e_VectorOverloading_s*;11
+.o 7 0
+s12
+	push_a 6
+	push_a 4
+	push_a 2
+	build _ 3 n103
+	push_a 6
+	push_a 4
+	push_a 3
+	build _ 3 n102
+	push_a 6
+	push_a 4
+	push_a 4
+	build _ 3 n101
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+.d 3 0
+	rtn
+.n 3 _ ea103
+.o 1 0
+n103
+	push_node _cycle_in_spine 3
+.o 4 0
+ea103
+.o 4 0
+s103
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea102
+.o 1 0
+n102
+	push_node _cycle_in_spine 3
+.o 4 0
+ea102
+.o 4 0
+s102
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea101
+.o 1 0
+n101
+	push_node _cycle_in_spine 3
+.o 4 0
+ea101
+.o 4 0
+s101
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
