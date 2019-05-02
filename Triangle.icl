@@ -6,11 +6,11 @@ import Ray
 import IntersectionRecord
 
 EPSILON = 0.0000001
-EMPTYINTERSECTRECORD = {t_ = 0.0, position_ = {x0=0.0, x1=0.0, x2=0.0}, normal_ = {x0=0.0, x1=0.0, x2=0.0}}
+EMPTYINTERSECTRECORD = {t_ = 0.0, position_ = {x0=0.0, x1=0.0, x2=0.0}, normal_ = {x0=0.0, x1=0.0, x2=0.0}, color_ = {x0=255, x1=255, x2=255}}
 
 //Start = EMPTYINTERSECTRECORD
 
-:: Triangle = {color_ :: (Vector3 Real), a_ :: (Vector3 Real), b_ :: (Vector3 Real), c_ :: (Vector3 Real)}
+:: Triangle = {colorT_ :: (Vector3 Int), a_ :: (Vector3 Real), b_ :: (Vector3 Real), c_ :: (Vector3 Real)}
 
 (intersect) :: Ray Triangle -> (Bool, IntersectionRecord)
 (intersect) ray triangle
@@ -53,7 +53,7 @@ EMPTYINTERSECTRECORD = {t_ = 0.0, position_ = {x0=0.0, x1=0.0, x2=0.0}, normal_ 
 
 (intersect4) :: Ray Triangle -> (Bool, IntersectionRecord)
 (intersect4) ray triangle
-| t > EPSILON = (True, {t_ = t, position_ = ray.origin_, normal_ = ray.direction_})
+| t > EPSILON = (True, {t_ = t, position_ = ray.origin_, normal_ = ray.direction_, color_ = triangle.colorT_ })
 = (False, EMPTYINTERSECTRECORD)
 	where
 		edge1 = triangle.b_ - triangle.a_
@@ -66,8 +66,11 @@ EMPTYINTERSECTRECORD = {t_ = 0.0, position_ = {x0=0.0, x1=0.0, x2=0.0}, normal_ 
 		q = Vec3crossProduct s edge1
 		v = f * (Vec3dotProduct ray.direction_ q)
 		t = f * (Vec3dotProduct edge2 q)
-/*		
-testTriangle = {color_ = {x0=0.0,x1=0.0,x2=0.0}, a_ = {x0=1.0,x1=2.0,x2=2.0}, b_ = {x0=3.0,x1=3.0,x2=3.0}, c_ = {x0=4.0,x1=5.0,x2=4.0}}
+		
+testTriangle = {colorT_ = {x0=255,x1=255,x2=255}, a_ = {x0=1.0,x1=2.0,x2=2.0}, b_ = {x0=3.0,x1=3.0,x2=3.0}, c_ = {x0=4.0,x1=5.0,x2=4.0}}
 testRay = {origin_ = {x0=0.0,x1=0.0,x2=0.0}, direction_ = {x0=1.0,x1=1.0,x2=1.0}}
 
-Start = testRay intersect testTriangle*/
+//Start:: (Vector3 Int)
+//Start = testTriangle.colorT_
+//Start = testTriangle.b_
+Start = testRay intersect testTriangle
