@@ -1,4 +1,4 @@
-implementation module ELTE_Buffer
+implementation module Buffer
 
 import StdEnv
 import VectorOverloading
