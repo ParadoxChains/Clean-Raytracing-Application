@@ -6,4 +6,4 @@ import Ray
 import IntersectionRecord
 import Triangle
 
-IntersectRayTriangles :: Ray [Triangle] -> (Bool, IntersectionRecord)
+IntersectRayTriangles :: Ray [Triangle] IntersectionRecord -> (Bool, IntersectionRecord)

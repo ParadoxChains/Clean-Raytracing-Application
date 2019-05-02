@@ -9,8 +9,8 @@ import Triangle
 
 EMPTYINTERSECTRECORD = {t_ = 0.0, position_ = {x0=0.0, x1=0.0, x2=0.0}, normal_ = {x0=0.0, x1=0.0, x2=0.0}, color_ = {x0=255, x1=255, x2=255}}
 
-IntersectRayTriangles :: Ray [Triangle] -> (Bool, IntersectionRecord)
-IntersectRayTriangles ray_ triList = IntersectRayTriangles2 ray_ triList (False, EMPTYINTERSECTRECORD)
+IntersectRayTriangles :: Ray [Triangle] IntersectionRecord -> (Bool, IntersectionRecord)
+IntersectRayTriangles ray_ triList initRec = IntersectRayTriangles2 ray_ triList (False, initRec)
 
 IntersectRayTriangles2 :: Ray [Triangle] (Bool, IntersectionRecord) -> (Bool, IntersectionRecord)
 IntersectRayTriangles2 _ [] rec_ = rec_
