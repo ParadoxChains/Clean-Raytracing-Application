@@ -43,6 +43,6 @@ where
     b = ~( camera.maxY_ - camera.minY_ )
     c = ~camera.distance_
 
-Start = getWorldSpaceRay camera {v0 = 0, v1 = 50}
-where 
-    camera = initCamera (~1.25) (1.25) (~1.25) (1.25) (3.0) ({v0 = 512, v1 = 512}) ({x0 = 0.0, x1 = 0.0, x2 = 350.0}) ({x0 = 0.0, x1 = 1.0, x2 = 0.0}) ({x0 = 0.0, x1 = 0.0, x2 = ~1.0})
+// Start = getWorldSpaceRay camera {v0 = 0, v1 = 50}
+// where 
+    // camera = initCamera (~1.25) (1.25) (~1.25) (1.25) (3.0) ({v0 = 512, v1 = 512}) ({x0 = 0.0, x1 = 0.0, x2 = 350.0}) ({x0 = 0.0, x1 = 1.0, x2 = 0.0}) ({x0 = 0.0, x1 = 0.0, x2 = ~1.0})
