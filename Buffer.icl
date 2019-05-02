@@ -3,19 +3,22 @@ implementation module Buffer
 import StdEnv
 import VectorOverloading
 
-// Const
-// If I forget to delete this, remind me
-a :: Int
-a = 10
-
 // Note that the matrix will be in the form a[y][x] not a[x][y]
 // since the output file is column to column
 InitBuff :: Int Int -> [[Vector3 Real]]
 //InitBuff x y = [[{x0 = toReal i, x1 = toReal j, x2 = 0.0} \\ j <- [1..x]] \\ i <- [1..y]]
 InitBuff x y = [[{x0 = 0.0, x1 = 0.0, x2 = 0.0} \\ i <- [1..x]] \\ j <- [1..y]]
 
+// TODO: Range check
 GetBuffElem :: [[Vector3 Real]] Int Int -> Vector3 Real
 GetBuffElem a i j = (a!!j)!!i
+
+// TODO: Range check
+SetBuffElem :: [[Vector3 Real]] Int Int (Vector3 Real) -> [[Vector3 Real]]
+SetBuffElem a i j v = (take j a) ++ [SetRow (a!!j) i v] ++ (drop (j + 1) a)
+	where
+		SetRow :: [Vector3 Real] Int (Vector3 Real) -> [Vector3 Real] 
+		SetRow row i v = (take i row) ++ [v] ++ (drop (i + 1) row)
 
 //P3 // magic number
 //# feep.ppm
@@ -29,7 +32,7 @@ GetBuffElem a i j = (a!!j)!!i
 WriteFile :: *File [[Vector3 Real]] -> *File
 WriteFile file img
 # file = file <<< "P3\n"
-# file = file <<< length img <<< ' ' <<< length (img!!0) <<< '\n'
+# file = file <<< length (img!!0) <<< ' ' <<< length img <<< '\n'
 # file = file <<< 255 <<< '\n'
 // Write a [Int] to a file
 # file = foldl (\x y = x <<< y <<< ' ') file img255
@@ -58,3 +61,4 @@ SaveToPPM img fname w
 = w
 	where
 		mode = FWriteText
+		
