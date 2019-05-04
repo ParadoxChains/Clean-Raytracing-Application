@@ -2,6 +2,7 @@ definition module Buffer
 
 import StdEnv
 import VectorOverloading
+import Triangle
 
 // Note that we have to use
 // Start w =
@@ -13,4 +14,6 @@ InitBuff :: Int Int -> [[Vector3 Real]] // Initialize buffer matrix with the giv
 GetBuffElem :: [[Vector3 Real]] Int Int -> Vector3 Real // Access to the element
 SetBuffElem :: [[Vector3 Real]] Int Int (Vector3 Real) -> [[Vector3 Real]]
 SaveToPPM :: [[Vector3 Real]] String *World -> *World // Write to file
-//LoadObj :: String *World -> ([(Char, [Char])], *World)
+//LoadObj :: String *World -> ([(Char, [[Char]])], *World)
+//LoadObj :: String *World -> ([(String, [Real])], *World)
+LoadObj :: String *World -> ([Triangle], *World)
