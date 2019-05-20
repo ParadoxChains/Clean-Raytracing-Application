@@ -2,6 +2,7 @@ implementation module Buffer
 
 import StdEnv
 import VectorOverloading
+import Triangle
 
 // Note that the matrix will be in the form a[y][x] not a[x][y]
 // since the output file is column to column
@@ -62,3 +63,78 @@ SaveToPPM img fname w
 	where
 		mode = FWriteText
 		
+ReadFile :: *File -> ([(Char, String)], *File)
+ReadFile file
+# (isEnd, file) = fend file
+| isEnd = ([], file)
+# (ok, typ, file) = freadc file
+| not ok = abort "Reading error, please check the input"
+# (cur, file) = freadline file
+# (res, file) = ReadFile file
+= ([(typ, cur)] ++ res, file)
+
+
+splitBy :: Char [Char] -> [[Char]]
+splitBy c [] = []
+splitBy c s = [a] ++ (splitBy c b)
+	where
+		(a, [bi : b]) = span ((<>)c) s
+
+preprocess :: [(Char, String)] -> [(Char, [[Char]])]
+preprocess [] = []
+preprocess [(t, s) : xs]
+| t == 'v' = [(t, resv) : preprocess xs] // vertices
+| t == 'f' = [(t, resf) : preprocess xs] // faces
+= preprocess xs
+where
+	cs = fromString s
+	tmp = [t] ++ (init cs)
+	resv = splitBy ' ' (tmp ++ [' '])
+	
+	tmpf = map (\x = splitBy '/' (x ++ ['/'])) resv
+	resf = map (\x = x !! 0) tmpf
+
+// TODO: Read color/texture
+default_color = {x0 = 1.0, x1 = 1.0, x2 = 1.0}
+
+ListToVec3 :: [a] -> (Vector3 a)
+ListToVec3 [a, b, c] = {x0 = a, x1 = b, x2 = c}
+
+CreateTriangle :: [(String, [Real])] -> [Triangle]
+CreateTriangle [] = []
+CreateTriangle a = [{colorT_ = default_color, a_ = vs !! id0, b_ = vs !! id1, c_ = vs !! id2}
+					\\ [id0: xs] <- fs, i <- [0..length xs - 2], id1 <- [xs !! i], id2 <- [xs !! (i + 1)]] // general case
+	where
+		tmpv :: [(String, [Real])]
+		tmpv = filter (\x = (fst x) == "v") a
+		vs :: [Vector3 Real]
+ 		vs = map (\x = (ListToVec3 o (take 3)) (snd x)) tmpv
+ 		tmpf :: [[Real]]
+ 		tmpf = map (\x = snd x) (filter (\x = (fst x) == "f") a)
+ 		tmpf2 :: [[Int]]
+ 		tmpf2 = (map o map) ((\x = x - 1) o toInt) tmpf
+		fs :: [[Int]]
+ 		fs = tmpf2
+
+//LoadObj :: String *World -> ([(String, [Real])], *World) // for debug
+LoadObj :: String *World -> ([Triangle], *World)
+LoadObj fname w
+# (ok, file, w) = fopen fname mode w
+| not ok = abort "Cant open"
+# (content, file) = ReadFile file
+# (content, file) = (preprocess content, file)
+# (content, file) = (map (preprocess1) content, file)
+# (content, file) = ((CreateTriangle o splitVF) content, file)
+//# (content, file) = (CreateTriangle content, file)
+# (ok, w) = fclose file w // Always remember to close
+| not ok = abort "Cant close"
+= (content, w)
+where
+	mode = FReadText
+	splitVF a = (vs) ++ (fs)
+	where
+		vs = (filter (\x = fst x == "v") a)
+		fs = (filter (\x = fst x == "f") a)
+	preprocess1 (a, b) =  (hd c, map (toReal) (tl c))
+	where
+			c = map (toString) (filter ((<>)[]) b)
