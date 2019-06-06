@@ -1,0 +1,7 @@
+Note run on 50x50 to check first
+open in GIMP
+
+cessna
+
+camera_position = {x0 = 40.0, x1 = 40.0, x2 = 10.0}
+camera_lookAt = {x0 = 0.0, x1 = ~10.0, x2 = 1.0}

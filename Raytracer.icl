@@ -15,18 +15,19 @@ MAX_REAL =: 999999999999.9
 
 resolution :: Vector2 Int
 //resolution = {v0 = 256, v1 = 256}
-resolution = {v0 = 64, v1 = 64}
+//resolution = {v0 = 64, v1 = 64}
 //resolution = {v0 = 200, v1 = 200}
+resolution = {v0 = 50, v1 = 50}
 
 camera_position :: Vector3 Real
-camera_position = {x0 = 10.0, x1 = 20.0, x2 = 10.0}
+camera_position = {x0 = 40.0, x1 = 40.0, x2 = 10.0}
 //camera_position = {x0 = 0.0, x1 = 0.0, x2 = 6.0}
 
 camera_up :: Vector3 Real
 camera_up = {x0 = 0.0, x1 = 1.0, x2 = 0.0}
 
 camera_lookAt :: Vector3 Real
-camera_lookAt = {x0 = 0.0, x1 = 0.0, x2 = ~1.0}
+camera_lookAt = {x0 = 0.0, x1 = ~10.0, x2 = 1.0}
 
 camera :: PinHoleCamera
 camera = initCamera (~1.25) 1.25 (~1.25) 1.25 3.0 (resolution) (camera_position) (camera_up) (camera_lookAt)
@@ -52,15 +53,16 @@ integrate resolution triangles = p1
 		res = integrate1 resolution triangles
 		p2 :: [Real]
 		p2 = flatten (map (\row = map (\x = snd x) row) res)
-		min_t :: Real
-//		min_t = GetMin p2 MAX_REAL//foldr (\x y = min y x) MAX_REAL p2
-		min_t = 1.0
+//		min_t :: Real
+		min_t = GetMin p2 MAX_REAL//foldr (\x y = min y x) MAX_REAL p2
+//		min_t = 1.0
 //		p1 = map (\row = map (\x = {x0 = min_t, x1 = min_t, x2 = min_t}) row) res // Stackoverflow
 		p1 = map (\row = map (shading) row) res
 		shading :: ((Vector3 Real), Real) -> Vector3 Real
 		shading (x, t) = {x0 = x.x0 * c, x1 = x.x1 * c, x2 = x.x2 * c}
 			where
-				c = 1.0//min_t / t
+				//c = 1.0 // without
+				c = min_t / t // with shader
     
 integrate1 :: (Vector2 Int) [Triangle] -> [[((Vector3 Real), Real)]]
 integrate1 resolution triangles = res
