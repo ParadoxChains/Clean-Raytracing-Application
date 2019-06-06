@@ -5,3 +5,22 @@ cessna
 
 camera_position = {x0 = 40.0, x1 = 40.0, x2 = 10.0}
 camera_lookAt = {x0 = 0.0, x1 = ~10.0, x2 = 1.0}
+
+Suzanne
+
+camera_position = {x0 = 2.5, x1 = 0.0, x2 = 2.5}
+camera_lookAt = {x0 = 0.7, x1 = 0.0, x2 = 0.5}
+
+Fiat
+
+camera_position = {x0 = 5.0, x1 = 2.3, x2 = 4.0}
+camera_lookAt = {x0 = ~0.2, x1 = 1.0, x2 = 0.5}
+//or
+//camera_position = {x0 = 2.5, x1 = 0.0, x2 = 2.5}
+//camera_lookAt = {x0 = ~0.5, x1 = 1.0, x2 = 0.5}
+
+airboat
+camera_position = {x0 = 14.0, x1 = 2.5, x2 = 10.0}
+camera_lookAt = {x0 = 3.7, x1 = 1.0, x2 = 1.0}
+
+
