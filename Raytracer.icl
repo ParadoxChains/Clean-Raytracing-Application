@@ -17,17 +17,17 @@ resolution :: Vector2 Int
 //resolution = {v0 = 256, v1 = 256}
 //resolution = {v0 = 64, v1 = 64}
 //resolution = {v0 = 200, v1 = 200}
-resolution = {v0 = 50, v1 = 50}
+resolution = {v0 = 512, v1 = 512}
 
 camera_position :: Vector3 Real
-camera_position = {x0 = 40.0, x1 = 40.0, x2 = 10.0}
+camera_position = {x0 = 5.0, x1 = 0.0, x2 = 5.0}
 //camera_position = {x0 = 0.0, x1 = 0.0, x2 = 6.0}
 
 camera_up :: Vector3 Real
 camera_up = {x0 = 0.0, x1 = 1.0, x2 = 0.0}
 
 camera_lookAt :: Vector3 Real
-camera_lookAt = {x0 = 0.0, x1 = ~10.0, x2 = 1.0}
+camera_lookAt = {x0 = ~0.5, x1 = 1.0, x2 = 0.5}
 
 camera :: PinHoleCamera
 camera = initCamera (~1.25) 1.25 (~1.25) 1.25 3.0 (resolution) (camera_position) (camera_up) (camera_lookAt)
@@ -92,4 +92,4 @@ Start w
 = SaveToPPM (integrate resolution triangles) (inp +++ ".ppm") w
 //= SaveToPPM (integrate resolution) "test.ppm" w
 where
-	inp = "cessna"
+	inp = "Fiat"

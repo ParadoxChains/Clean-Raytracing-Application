@@ -18,6 +18,9 @@ camera_lookAt = {x0 = ~0.2, x1 = 1.0, x2 = 0.5}
 //or
 //camera_position = {x0 = 2.5, x1 = 0.0, x2 = 2.5}
 //camera_lookAt = {x0 = ~0.5, x1 = 1.0, x2 = 0.5}
+//used
+//camera_position = {x0 = 5.0, x1 = 0.0, x2 = 5.0}
+//camera_lookAt = {x0 = ~0.5, x1 = 1.0, x2 = 0.5}
 
 airboat
 camera_position = {x0 = 14.0, x1 = 2.5, x2 = 10.0}
