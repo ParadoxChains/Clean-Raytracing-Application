@@ -17,17 +17,17 @@ resolution :: Vector2 Int
 //resolution = {v0 = 256, v1 = 256}
 //resolution = {v0 = 64, v1 = 64}
 //resolution = {v0 = 200, v1 = 200}
-resolution = {v0 = 512, v1 = 512}
+resolution = {v0 = 50, v1 = 50}
 
 camera_position :: Vector3 Real
-camera_position = {x0 = 5.0, x1 = 0.0, x2 = 5.0}
+camera_position = {x0 = ~800.0, x1 = 200.0, x2 = 1200.0}
 //camera_position = {x0 = 0.0, x1 = 0.0, x2 = 6.0}
 
 camera_up :: Vector3 Real
 camera_up = {x0 = 0.0, x1 = 1.0, x2 = 0.0}
 
 camera_lookAt :: Vector3 Real
-camera_lookAt = {x0 = ~0.5, x1 = 1.0, x2 = 0.5}
+camera_lookAt = {x0 = 0.0, x1 = 0.0, x2 = ~700.0}
 
 camera :: PinHoleCamera
 camera = initCamera (~1.25) 1.25 (~1.25) 1.25 3.0 (resolution) (camera_position) (camera_up) (camera_lookAt)
@@ -40,8 +40,8 @@ GetMin :: [Real] Real -> Real
 //GetMin [] y = y
 //GetMin [x : xs] y = GetMin xs (min x y)
 //GetMin x y = (toReal o length) (filter ((>) MAX_REAL) x) 
-//GetMin x y = foldr (\x y = min x y) y x
-GetMin x y = hd (sort x)
+GetMin x y = foldr (\x y = min x y) y x
+//GetMin x y = hd (sort x)
 //	where
 //		res = filter ((>) MAX_REAL) x
 
@@ -92,4 +92,4 @@ Start w
 = SaveToPPM (integrate resolution triangles) (inp +++ ".ppm") w
 //= SaveToPPM (integrate resolution) "test.ppm" w
 where
-	inp = "Fiat"
+	inp = "The City"

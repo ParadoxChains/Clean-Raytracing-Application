@@ -26,4 +26,9 @@ airboat
 camera_position = {x0 = 14.0, x1 = 2.5, x2 = 10.0}
 camera_lookAt = {x0 = 3.7, x1 = 1.0, x2 = 1.0}
 
+City
+camera_position = {x0 = ~800.0, x1 = 200.0, x2 = 1200.0}
+camera_lookAt = {x0 = 0.0, x1 = 0.0, x2 = ~1000.0}
+
+
 
