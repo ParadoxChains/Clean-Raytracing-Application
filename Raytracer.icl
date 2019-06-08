@@ -17,17 +17,17 @@ resolution :: Vector2 Int
 //resolution = {v0 = 256, v1 = 256}
 //resolution = {v0 = 64, v1 = 64}
 //resolution = {v0 = 200, v1 = 200}
-resolution = {v0 = 50, v1 = 50}
+resolution = {v0 = 1024, v1 = 384}
 
 camera_position :: Vector3 Real
-camera_position = {x0 = ~800.0, x1 = 200.0, x2 = 1200.0}
+camera_position = {x0 = ~800.0, x1 = 300.0, x2 = 800.0}
 //camera_position = {x0 = 0.0, x1 = 0.0, x2 = 6.0}
 
 camera_up :: Vector3 Real
 camera_up = {x0 = 0.0, x1 = 1.0, x2 = 0.0}
 
 camera_lookAt :: Vector3 Real
-camera_lookAt = {x0 = 0.0, x1 = 0.0, x2 = ~700.0}
+camera_lookAt = {x0 = 0.0, x1 = 0.0, x2 = ~1000.0}
 
 camera :: PinHoleCamera
 camera = initCamera (~1.25) 1.25 (~1.25) 1.25 3.0 (resolution) (camera_position) (camera_up) (camera_lookAt)
