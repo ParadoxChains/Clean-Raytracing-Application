@@ -9,33 +9,24 @@ Project conducted by the Functional Programming Research Team at Eotvos Lorand U
     * Add important missing features: results section, references.
 
 ## Task Division
-### 1st Deadline: July 22th
+### 2st Deadline: July 26th
 #### Pedro
-* New iteration on Introduction section 1, 1.2;
-* New iteration on Section 2 (2.1, 2.2, 2.3, 2.4, 2.5, 2.6);
+* Develop First Iteration (5.1) initial statements;
+* Develop Second Iteration (5.2) initial statements;
+* Develop and discuss Feedback Questionnaire (5.3) from the available charts and tables;
 
 #### Nghia
-* New iteration on section 3.2, concerning the application of Ray Tracing on FP
-    * Introduce new examples of application of our topic into FP, and reviewing the examples already in place;
+* Gather, process (graphs, charts) and share data from sections 5.1.1 and 5.2.2 (BEAD);
 
 #### Yuri
-* New iteration on section 3.1, about the class structure
-    * Go over the already written text, checking for possible mistakes;
-    * Introduce new aspects not present in the current text;
+* Gather, process and share data from the ray tracing theory questions;
+* Discuss the result of the ray tracing theory questions;
 
 #### Ying
-* New iteration on section 4
-    * Maybe introduce examples of the quizzes or introduce more details in the overall process of evaluation;
-* New Iteration on section 6
-    * Add more future works and go over the current material;
+* Discuss results from Sections 5.1.1 and 5.2.2 (after Nghia processes it)
 
 #### Viktória
 * New iteration on the Abstract;
 * New iteration on Section 1.1;
+* Discussion of Section 5.3 (improve and extend);
 * Start gathering references;
-
-#### Evan (If reachable)
-* Introduce new pictures used on conference presentation into the section 2.6;
-* Start writing results section (5)
-    * Introduce new graphs;
-    * Start development of subsections;
